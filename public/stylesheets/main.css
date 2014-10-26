@@ -1,0 +1,70 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+  background-image: url(../images/bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bold ;
+}
+
+a {
+    color: gold;
+    font-weight: bold ;
+}
+
+a:hover, a:focus {
+    color: #B7822D;
+    font-weight: bold ;
+}
+
+.baseTable {
+    vertical-align: top;
+    table-layout: fixed;
+    word-wrap: normal;
+    width: 94%;
+    height: 97%;
+    background-color: rgba(240, 255, 255, 0.3);/*opacity: 0.67*/
+    /*background-color: rgba(255, 215, 0, 0.3);/*opacity: 0.67*/
+}
+
+.baseTable tr td {
+    vertical-align: top;
+    text-align: center;
+    border: 10px;
+    height: 100%;
+}
+
+.baseTable tr td:first-child,
+ .baseTable tr td:last-child {
+    height: 100px;
+}
+
+.logo {
+    height: 50px;
+    weight: 100px;
+    float: left;
+}
+
+span.caption {
+    font-size: 32px;
+    font-weight: bold ;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #B7822D;
+    padding-top: 6px;
+    text-shadow: 0 0 3px #FF0000;
+}
+
+.loginSection {
+    float: right;
+}
+
+.mainContent {
+
+}
+
+.footer {
+    vertical-align: bottom;
+    horizontal-align: right;
+    float: right;
+}
