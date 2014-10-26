@@ -1,1 +1,1 @@
-web: activator run -Dhttp.port=${PORT} ${JAVA_OPTS}
+web: web: target/universal/stage/bin/crickit -Dhttp.port=${PORT} ${JAVA_OPTS}
