@@ -5,7 +5,6 @@ import com.mohiva.play.silhouette.contrib.utils.BCryptPasswordHasher
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
 
-
 case class User (
 	id: Option[Long],
 	email: String,
