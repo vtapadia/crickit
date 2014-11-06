@@ -21,7 +21,7 @@ case class User (
 object User {
 	
 	val users = scala.collection.mutable.HashMap[String, User](
-		"johndoe@myweb.com" -> User(Some(1L), "johndoe@myweb.com", true, (new BCryptPasswordHasher()).hash("123123").password, "johndoe", "John", "Doe")
+		"support@envyleague.com" -> User(Some(1L), "support@envyleague.com", true, (new BCryptPasswordHasher()).hash("123123").password, "johndoe", "Support", "envyleague")
 	)
 	
 	def findByEmail (email: String): Future[Option[User]] = Future.successful(users.get(email))
