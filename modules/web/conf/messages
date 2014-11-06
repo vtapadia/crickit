@@ -1,0 +1,8 @@
+mail.welcome.subject=Welcome to www.envyleague.com
+mail.welcome.hello=Hello {0}!
+mail.welcome.instructions=Thank you for signing up and playing in the www.envyleague.com. Please, simply go to the following URL to activate your account.
+mail.welcome.support=In case of any concerns, please mail to support@envyleague.com
+
+mail.forgotpwd.subject=Reset password for www.envyleague.com
+mail.forgotpwd.hello=Hello {0}!
+mail.forgotpwd.instructions=We have received a request to reset your password. Please, simply go to the following URL to reset it.

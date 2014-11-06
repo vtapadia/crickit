@@ -1,14 +1,13 @@
-name := """crickit"""
+Common.appSettings
 
-version := "1.0-SNAPSHOT"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val common = (project in file("modules/common")).enablePlugins(PlayScala)
 
-scalaVersion := "2.11.1"
+lazy val admin = (project in file("modules/admin")).enablePlugins(PlayScala).dependsOn(common)
 
-libraryDependencies ++= Seq(
-  jdbc,
-  anorm,
-  cache,
-  ws
-)
+lazy val web = (project in file("modules/web")).enablePlugins(PlayScala).dependsOn(common)
+
+lazy val root = (project in file(".")).enablePlugins(PlayScala).aggregate(common, admin, web).dependsOn(common, admin, web)
+
+
+libraryDependencies ++= Common.commonDependencies

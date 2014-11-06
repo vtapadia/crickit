@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/crickit -Dhttp.port=${PORT}
+web: target/universal/stage/bin/crickit -Dhttp.port=${PORT} -Dconfig.resource=application.prod.conf
